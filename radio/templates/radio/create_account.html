@@ -1,0 +1,78 @@
+{% extends 'layouts/login_base.html' %}	
+
+
+    {% block content %}
+                <form method="POST" action="" class="validate-form" id="register_form"  
+                 id= "registration-form" >
+                 {% csrf_token %}
+                   <span class="login100-form-title p-b-20 p-t-20">
+                       Create Account
+                   </span>
+                   
+                   <div class="wrap-input100 validate-input ">
+                       <input class="input100" type="text" name="name" value="" required="">
+                       <span class="focus-input100"></span>
+                       <span class="label-input100">Name</span>
+                   </div>
+               
+                   <div class="validate-input">
+                   <div class="row form-group">
+                           <h5 class="col-lg-3 col-md-3 col-sm-3">
+                               Role      
+               </h5>
+               <div class="col-lg-9 col-md-9 col-sm-9 d-inline">
+               <input type="radio" name="Role" id="Admin" value="Admin"
+                required=""> <label for="Admin" class="d-inline">Admin</label>
+               <br>
+               <input type="radio" name="Role" id="Doctor" value="Doctor" required=""> 
+               <label for="Doctor" class="d-inline">Doctor<br>
+               <input type="radio" name="Role" id="Receptionist" value="Receptionist" required="">
+                <label for="Receptionist" class="d-inline">Receptionist</label><br>
+               <input type="radio" name="Role" id="fTechnicians" value="Technicians" required=""> 
+               <label for="Technicians" class="d-inline">Technicians<br>
+               <input type="radio" name="Role" id="fRadiologist" value="Radiologist" required="">
+                <label for="fRadiologist" class="d-inline">Radiologist<br>
+               </label>
+               </div>
+               </div>
+                   </div>
+               
+                   <div class="wrap-input100 validate-input ">
+                       <input class="input100" type="text" name="phone" value="" required="">
+                       <span class="focus-input100"></span>
+                       <span class="label-input100">User Name</span>
+                   </div>
+               
+                   <div class="wrap-input100 validate-input ">
+                       <input class="input100" type="email" name="email" value="" required="">
+                       <span class="focus-input100"></span>
+                       <span class="label-input100">Email</span>
+                   </div>
+               <div class="wrap-input100 validate-input ">
+                   <input class="input100" type="password" name="password" required="">
+                   <span class="focus-input100"></span>
+                   <span class="label-input100">Password</span>
+               </div>
+               
+               <div class="wrap-input100 validate-input ">
+                   <input class="input100" type="password" name="confirm_password" required="">
+                   <span class="focus-input100"></span>
+                   <span class="label-input100">Confirm Password</span>
+               </div>
+                            
+                            <a href="" class="btn btn-primary">
+                              <button type="button" class="btn btn-primary">Create Account</button>
+                            </a>
+                  
+                              </form>
+       {% endblock %}
+                
+
+
+
+
+
+
+
+
+

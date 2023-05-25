@@ -1,0 +1,91 @@
+{% extends 'layouts/dashboard_users.html' %}
+   
+{% load static %}
+
+    
+{% block sidebar %}
+
+  
+  
+  <!-- Sidebar user panel (optional) -->
+  <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+    <div class="image">
+      <img src="./Extreme Radiology _ Dashboard_files/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+    </div>
+    <div class="info">
+      <a href="https://radiology.extremelab.tech/patient#" class="d-block">
+         
+          saror<br>
+          Code: 1593914720
+                    </a>
+    </div>
+  </div>
+  <!-- Sidebar Menu -->
+  <!-- Admin sidebar -->
+            <nav class="mt-2">
+<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+<li class="nav-item">
+  <a href="{% url 'radio:doctor_dashboard' %}" class="nav-link " id="dashboard">
+      <i class="nav-icon fas fa-th"></i>
+      <p>
+          Dashboard
+      </p>
+  </a>
+</li>
+
+<li class="nav-item">
+  <a href=" url 'radio:doctor_profile' %}" class="nav-link" id="profile">
+    <i class="nav-icon fas fa-user-circle"></i>
+    <p>
+      Profile
+    </p>
+  </a>
+</li>
+
+
+<li class="nav-item">
+    <a href=" url 'radio:booking' %}" class="nav-link" id="bookings">
+      <i class="nav-icon fas fa-calendar"></i>
+      <p>
+        Requests
+      </p>
+    </a>
+  </li>
+  
+<li class="nav-item">
+  <a href=" url 'doctor:reports' %}" class="nav-link" id="groups">
+    <i class="nav-icon fas fa-flask"></i>
+    <p>
+      Reports
+    </p>
+  </a>
+</li>
+
+<li class="nav-item">
+  <a href=" url 'doctor:tests_library' %}" class="nav-link" id="tests_library">
+    <i class="fas fa-book-medical nav-icon"></i>
+    <p>
+      Tests Library
+    </p>
+  </a>
+</li>
+
+
+
+
+</ul>
+</nav>                <!-- \Patient sidebar -->
+<!-- /.sidebar-menu -->
+</div></div></div><div class="os-scrollbar os-scrollbar-horizontal os-scrollbar-unusable os-scrollbar-auto-hidden"><div class="os-scrollbar-track"><div class="os-scrollbar-handle" style="width: 100%; transform: translate(0px, 0px);"></div></div></div><div class="os-scrollbar os-scrollbar-vertical os-scrollbar-auto-hidden os-scrollbar-unusable"><div class="os-scrollbar-track"><div class="os-scrollbar-handle" style="height: 100%; transform: translate(0px, 0px);"></div></div></div><div class="os-scrollbar-corner"></div></div>
+</aside>
+
+
+
+{% endblock sidebar %}
+        
+
+
+
+{% block content %}
+    
+{% endblock content %}
